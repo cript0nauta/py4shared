@@ -1,0 +1,10 @@
+*.py?
+.*.sw?
+*~
+login
+*.html
+!template.html
+*.pdf
+*.mobi
+db_*
+images/*
