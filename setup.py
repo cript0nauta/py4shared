@@ -4,7 +4,7 @@
 from setuptools import setup #, find_packages
 
 setup(name='py4shared',
-        version = '1.0',
+        version = '1.1',
         description = '4shared download manager',
         author = 'Matías Lang',
         author_email = 'shareman1204@gmail.com',
