@@ -57,8 +57,8 @@ class FourSharedSession(object):
         path = urlsplit(url).path
         return os.path.basename(path)
 
-    def download_link(self, url, dirname = './'):
-        """ Retorna el link de descarga a el fichero de la URL """
+    def download(self, url, dirname = './'):
+        """ Descarga el fichero especificado en la URL """
         self.session.get(url) # Necesario para que no nos redirija
         url = self.url_descarga(url)
         page = self.session.get(url).text
@@ -94,4 +94,4 @@ if __name__ == '__main__':
        exit()
     s = FourSharedSession(email, pwd)
     link = sys.argv[1]
-    s.download_link(link)
+    s.download(link)
